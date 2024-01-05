@@ -1,7 +1,13 @@
+import Test from "./Test";
+import Navbar from "./components/navbar/Navbar";
+
 const App = () => {
   return (
     <div>
-      <section className="">Hero</section>
+      {/* <Test /> */}
+      <section className="">
+        <Navbar />
+      </section>
       <section className="">Parallax</section>
       <section className="">Services</section>
       <section className="">Parallax</section>
