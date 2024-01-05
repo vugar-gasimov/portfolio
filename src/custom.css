@@ -26,3 +26,7 @@ section {
   height: 100vh;
   scroll-snap-align: center;
 }
+
+.custom-height {
+  height: calc(100vh - 100px);
+}

@@ -40,7 +40,7 @@ const Links = () => {
           whileTap={{ scale: 0.95 }}
           href={`#${item}`}
           key={item}
-          className="text-2xl sm:text-xl"
+          className="font-bold text-3xl"
         >
           {item}
         </motion.a>

@@ -1,4 +1,5 @@
 import Test from "./Test";
+import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <div>
       <section id="Homepage" className="">
         <Navbar />
+        <Hero />
       </section>
       <section id="Services" className="">
         Parallax
