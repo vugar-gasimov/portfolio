@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import "./parallax.scss";
 
 const Parallax = ({ type }) => {
   const ref = useRef();
@@ -15,7 +16,7 @@ const Parallax = ({ type }) => {
   return (
     <div
       ref={ref}
-      className=" "
+      className="parallax"
       style={{
         background:
           type === "services"
@@ -26,25 +27,19 @@ const Parallax = ({ type }) => {
       <motion.h1 style={{ y: yText }} className="">
         {type === "services" ? "What We Do ?" : "What We Did ?"}
       </motion.h1>
+      <motion.div className="mountains"></motion.div>
       <motion.div
-        className=""
-        style={{ backgroundImage: 'url("/mountains.png")', zIndex: 3 }}
-      ></motion.div>
-      <motion.div
-        className=" "
+        className="planets"
         style={{
           backgroundImage: `url(${
             type === "services" ? "/planets.png" : "/sun.png"
           })`,
-          zIndex: 2,
           y: yBg,
         }}
       ></motion.div>
       <motion.div
-        className=" "
+        className="stars"
         style={{
-          backgroundImage: 'url("/stars.png")',
-          zIndex: 1,
           x: yBg,
         }}
       ></motion.div>

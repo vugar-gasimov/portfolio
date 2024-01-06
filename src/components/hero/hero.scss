@@ -28,12 +28,14 @@
       }
 
       h2 {
+        z-index: 2;
         font-size: 30px;
         color: rebeccapurple;
         letter-spacing: 10px;
       }
 
       h1 {
+        z-index: 2;
         font-size: 88px;
 
         @include mobile {
@@ -43,28 +45,32 @@
 
       .buttons {
         button {
+          z-index: 2;
           padding: 20px;
           border: 1px solid white;
           border-radius: 10px;
           background-color: transparent;
           color: white;
           margin-right: 20px;
-          cursor: pointer;
           font-weight: 300;
+          cursor: pointer;
         }
       }
 
       img {
         width: 50px;
+        z-index: 2;
       }
     }
   }
 
   .imageContainer {
+    z-index: 3;
+    width: 600px;
     height: 100%;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 20px;
 
     @include mobile {
       height: 50%;
