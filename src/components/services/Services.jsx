@@ -1,76 +1,128 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import "./services.scss";
+
+const variantLeft = {
+  initial: {
+    x: -500,
+  },
+  animate: {
+    x: 0,
+
+    transition: { duration: 3, delay: 3 },
+    staggerChildren: 0.1,
+  },
+};
+const variantRight = {
+  initial: {
+    x: 1000,
+  },
+  animate: {
+    x: 0,
+
+    transition: { duration: 3, delay: 3 },
+    staggerChildren: 0.1,
+  },
+};
+const variantTop = {
+  initial: {
+    y: -500,
+  },
+  animate: {
+    y: 0,
+    transition: { duration: 3 },
+  },
+};
 
 const Services = () => {
+  const ref = useRef();
+
+  const isInView = useInView(ref, { margin: "-100px" });
   return (
-    <motion.div className="bg-gradient-to-b from-custom-start-color to-custom-end-color h-full flex flex-col justify-between">
-      {/* text */}
-      <motion.div className="flex-1 self-end flex md:items-center gap-20 text-center flex-col md:text-left md:flex-row  ">
-        <p className="font-light text-[20px] text-gray-500 text-right">
+    <motion.div
+      className="services"
+      variants={variantTop}
+      initial="initial"
+      // whileInView="animate"
+      ref={ref}
+      animate={isInView && "animate"}
+    >
+      <motion.div className="textContainer" variants={variantRight}>
+        <p>
           I focus on helping your brand grow <br /> and move forward
         </p>
-        <hr className="w-[300px] border-none border-t-0.5 border-gray-500 md:w-[500px] " />
+        <hr />
       </motion.div>
-      {/* title */}
-      <motion.div className="flex-2  flex flex-col items-center w-full md:w-auto ">
-        <div className="flex items-center gap-[50px]">
-          <img
-            className="w-[300px] h-[100px] rounded-full object-cover"
-            src="/people.webp"
-            alt="Team working together."
-          />
-          <h1 className="text-[36px] font-thin md:text-[96px]">
-            <b className="font-bold">Unique </b> Ideas
+      <motion.div className="titleContainer" variants={variantLeft}>
+        <div className="title">
+          <img src="/people.webp" alt="Team working together." />
+          <h1>
+            <motion.b whileHover={{ color: "lightgray" }}>Unique </motion.b>{" "}
+            Ideas
           </h1>
         </div>
-        <div className="">
-          <h1 className="">
-            <b className="">For Your </b> Business.
+        <div className="title">
+          <h1>
+            <motion.b whileHover={{ color: "lightgray" }}>For Your </motion.b>
+            Business.
           </h1>
-          <button className="">WHAT WE DO?</button>
+          <button>WHAT WE DO?</button>
         </div>
       </motion.div>
-      {/* list */}
-      <motion.div className="">
-        <div className="">
-          <h2 className="">Branding</h2>
+
+      <motion.div className="listContainer" variants={variantRight}>
+        <motion.div
+          className="box"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
+          <h2>Branding</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
             quas magni officiis magnam dolore. Rerum, similique veritatis
             doloribus pariatur quae, qui dolorum tempora cumque quod atque ullam
             possimus magni sapiente.
           </p>
-          <button className="">Go</button>
-        </div>
-        <div className="">
-          <h2 className="">Branding</h2>
+          <button>Go</button>
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
+          <h2>Branding</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
             quas magni officiis magnam dolore. Rerum, similique veritatis
             doloribus pariatur quae, qui dolorum tempora cumque quod atque ullam
             possimus magni sapiente.
           </p>
-          <button className="">Go</button>
-        </div>
-        <div className="">
-          <h2 className="">Branding</h2>
+          <button>Go</button>
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
+          <h2>Branding</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
             quas magni officiis magnam dolore. Rerum, similique veritatis
             doloribus pariatur quae, qui dolorum tempora cumque quod atque ullam
             possimus magni sapiente.
           </p>
-          <button className="">Go</button>
-        </div>
-        <div className="">
-          <h2 className="">Branding</h2>
+          <button>Go</button>
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
+          <h2>Branding</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
             quas magni officiis magnam dolore. Rerum, similique veritatis
             doloribus pariatur quae, qui dolorum tempora cumque quod atque ullam
             possimus magni sapiente.
           </p>
-          <button className="">Go</button>
-        </div>
+          <button>Go</button>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
