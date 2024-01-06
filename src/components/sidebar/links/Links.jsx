@@ -29,10 +29,7 @@ const Links = () => {
   const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
 
   return (
-    <motion.div
-      variants={variants}
-      className=" absolute w-full h-full flex flex-col items-center justify-center gap-20"
-    >
+    <motion.div variants={variants} className=" ">
       {items.map((item) => (
         <motion.a
           variants={itemVariants}
@@ -40,7 +37,7 @@ const Links = () => {
           whileTap={{ scale: 0.95 }}
           href={`#${item}`}
           key={item}
-          className="font-bold text-3xl"
+          className=""
         >
           {item}
         </motion.a>

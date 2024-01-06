@@ -5,14 +5,14 @@ import ToggleBtn from "./toggleBtn/ToggleBtn";
 
 const variants = {
   open: {
-    clipPath: "circle(1200px at 50px 50px)",
+    clipPath: "",
     transition: {
       type: "spring",
       stiffness: 20,
     },
   },
   closed: {
-    clipPath: "circle(30px at 50px 50px)",
+    clipPath: "",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -28,11 +28,11 @@ const Sidebar = () => {
   return (
     <motion.div
       animate={open ? "open" : "closed"}
-      className="flex flex-col items-center justify-center bg-white text-black"
+      className=""
     >
       <motion.div
         variants={variants}
-        className="fixed top-0 left-0 bottom-0 w-[400px] bg-white z-50"
+        className=""
       >
         <Links />
       </motion.div>
