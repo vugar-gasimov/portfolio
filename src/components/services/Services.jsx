@@ -9,7 +9,7 @@ const variantLeft = {
   animate: {
     x: 0,
 
-    transition: { duration: 3, delay: 3 },
+    transition: { duration: 1, delay: 1 },
     staggerChildren: 0.1,
   },
 };
@@ -20,7 +20,7 @@ const variantRight = {
   animate: {
     x: 0,
 
-    transition: { duration: 3, delay: 3 },
+    transition: { duration: 1, delay: 1 },
     staggerChildren: 0.1,
   },
 };
@@ -30,7 +30,7 @@ const variantTop = {
   },
   animate: {
     y: 0,
-    transition: { duration: 3 },
+    transition: { duration: 1 },
   },
 };
 
