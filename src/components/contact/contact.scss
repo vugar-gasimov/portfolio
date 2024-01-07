@@ -6,8 +6,9 @@
   margin: auto;
   display: flex;
   align-self: center;
-  justify-content: space-between;
   gap: 50px;
+  flex-wrap: wrap;
+  align-content: center;
 
   .textContainer {
     flex: 1;
@@ -28,6 +29,14 @@
   }
   .formContainer {
     flex: 1;
+    position: relative;
+
+    .phoneSvg {
+      stroke: orange;
+      position: absolute;
+      margin: auto;
+      z-index: -1;
+    }
 
     form {
       display: flex;
@@ -52,6 +61,18 @@
         font-weight: 600;
         border-radius: 20px;
         font-size: 18px;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+
+        .error {
+          color: red;
+        }
+
+        .success {
+          color: rgb(34, 204, 34);
+        }
       }
     }
   }
