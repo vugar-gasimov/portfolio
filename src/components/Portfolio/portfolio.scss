@@ -1,1 +1,19 @@
 @import "../../app.scss";
+
+.portfolio {
+  position: relative;
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 25px;
+    background-color: inherit;
+    text-align: center;
+    color: orange;
+    font-size: 36px;
+    .progressBar {
+      height: 10px;
+      background-color: lightgray;
+    }
+  }
+}
