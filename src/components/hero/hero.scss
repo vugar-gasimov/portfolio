@@ -37,6 +37,7 @@
       h1 {
         z-index: 2;
         font-size: 88px;
+        color: orange;
 
         @include mobile {
           font-size: 36px;
