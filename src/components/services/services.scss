@@ -5,6 +5,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 20px;
+
+  @include tablet {
+    padding: 20px;
+  }
 
   .textContainer {
     flex: 1;
@@ -19,6 +24,11 @@
       flex-direction: column;
       gap: 10px;
       margin-bottom: -70px;
+    }
+
+    @include tablet {
+      margin-top: -45px;
+      gap: 15px;
     }
 
     p {
@@ -39,6 +49,10 @@
       @include mobile {
         width: 300px;
         margin-left: 80px;
+      }
+
+      @include tablet {
+        width: 400px;
       }
     }
   }
@@ -62,14 +76,16 @@
         text-align: center;
         gap: 10px;
       }
+      @include tablet {
+        gap: 20px;
+      }
 
       img {
-        width: 300px;
-        height: 100px;
+        width: 400px;
+        height: 200px;
         border-radius: 50px;
         object-fit: cover;
-
-        @include mobile {
+        @include tablet {
           width: 300px;
           height: 100px;
         }
@@ -81,6 +97,9 @@
 
         @include mobile {
           font-size: 36px;
+        }
+        @include tablet {
+          font-size: 62px;
         }
         b {
           color: orange;
@@ -95,11 +114,17 @@
         border: none;
         font-size: 24px;
         cursor: pointer;
+        font-weight: bold;
 
         @include mobile {
           font-size: 16px;
           width: 150px;
           height: 50px;
+        }
+        @include tablet {
+          font-size: 20px;
+          width: 200px;
+          height: 75px;
         }
       }
     }
@@ -115,6 +140,9 @@
       flex-direction: column;
       width: 100%;
       margin-bottom: 50px;
+    }
+    @include tablet {
+      gap: 5px;
     }
 
     .box {
@@ -132,6 +160,15 @@
         padding: 10px;
       }
 
+      @include tablet {
+        padding: 10px;
+        justify-content: space-evenly;
+      }
+
+      h2 {
+        color: orange;
+      }
+
       p {
         @include mobile {
           display: none;
@@ -144,6 +181,7 @@
         border-radius: 20px;
         border: none;
         cursor: pointer;
+        font-weight: 700;
 
         @include mobile {
           background-color: transparent;

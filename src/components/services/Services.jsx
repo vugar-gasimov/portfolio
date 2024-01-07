@@ -43,7 +43,6 @@ const Services = () => {
       className="services"
       variants={variantTop}
       initial="initial"
-      // whileInView="animate"
       ref={ref}
       animate={isInView && "animate"}
     >
@@ -57,7 +56,7 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="Team working together." />
           <h1>
-            <motion.b whileHover={{ color: "lightgray" }}>Unique </motion.b>{" "}
+            <motion.b whileHover={{ color: "lightgray" }}>Unique </motion.b>
             Ideas
           </h1>
         </div>
@@ -66,7 +65,7 @@ const Services = () => {
             <motion.b whileHover={{ color: "lightgray" }}>For Your </motion.b>
             Business.
           </h1>
-          <button>WHAT I DO?</button>
+          {/* <button>WHAT I DO?</button> */}
         </div>
       </motion.div>
 
@@ -82,7 +81,7 @@ const Services = () => {
             doloribus pariatur quae, qui dolorum tempora cumque quod atque ullam
             possimus magni sapiente.
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
         <motion.div
           className="box"
@@ -95,7 +94,7 @@ const Services = () => {
             doloribus pariatur quae, qui dolorum tempora cumque quod atque ullam
             possimus magni sapiente.
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
         <motion.div
           className="box"
@@ -108,9 +107,9 @@ const Services = () => {
             doloribus pariatur quae, qui dolorum tempora cumque quod atque ullam
             possimus magni sapiente.
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
-        <motion.div
+        {/* <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
@@ -121,8 +120,8 @@ const Services = () => {
             doloribus pariatur quae, qui dolorum tempora cumque quod atque ullam
             possimus magni sapiente.
           </p>
-          <button>Go</button>
-        </motion.div>
+           <button>Go</button> 
+        </motion.div> */}
       </motion.div>
     </motion.div>
   );
