@@ -21,7 +21,7 @@ const items = [
     id: 3,
     title: "Bookshelf",
     img: "/bookshelf.png",
-    desc: " Contributed to a dynamic e-commerce platform showcasing diverse best-selling books. Collaborated on responsive web pages for seamless user experience. This project was technically enriching and personally rewarding. Active participation taught me the value of teamwork, finding inspiration in a collaborative environment. Identified leadership aptitude without a formal title, affirming belief in the power of teamwork for learning and growth",
+    desc: " Contributed to a dynamic e-commerce platform showcasing diverse best-selling books. Collaborated on responsive web pages for seamless user experience. This project was technically enriching and personally rewarding. Active participation taught me the value of teamwork, finding inspiration in a collaborative environment.",
     skills: "Teamwork, Firebase(Authentication), JavaScript",
   },
   {

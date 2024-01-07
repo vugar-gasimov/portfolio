@@ -7,4 +7,8 @@
   border: 1px solid orange;
   position: fixed;
   z-index: 100;
+
+  @include tablet {
+    display: none;
+  }
 }

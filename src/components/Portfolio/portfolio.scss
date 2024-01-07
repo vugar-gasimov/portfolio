@@ -12,6 +12,11 @@
     color: lightgray;
     font-size: 36px;
 
+    @include mobile {
+      padding-top: calc(100vh - 100px);
+      font-size: 24px;
+    }
+
     .progressBar {
       height: 10px;
       background-color: orange;
@@ -35,9 +40,19 @@
       justify-content: center;
       gap: 40px;
 
+      @include mobile {
+        flex-direction: column;
+        gap: 10px;
+      }
+
       .imgContainer {
         flex: 1;
         height: 50%;
+
+        @include mobile {
+          width: 100%;
+          max-height: 300px;
+        }
 
         img {
           width: 100%;
@@ -52,13 +67,28 @@
         flex-direction: column;
         gap: 30px;
 
+        @include mobile {
+          transform: none !important;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+          gap: 15px;
+        }
+
         h2 {
           font-size: 72px;
           color: lightgray;
+
+          @include mobile {
+            font-size: 36px;
+          }
         }
         p {
           color: orange;
           font-size: 20px;
+          @include mobile {
+            font-size: 16px;
+          }
         }
         h3 {
           font-size: 36px;

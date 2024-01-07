@@ -17,7 +17,7 @@
     width: 400px;
     background: white;
 
-    @include mobile {
+    @include tablet {
       width: 200px;
     }
 
