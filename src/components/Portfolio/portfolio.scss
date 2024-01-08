@@ -32,7 +32,7 @@
     overflow: hidden;
     padding: 20px;
     @include mobile {
-      padding-top: 75px;
+      padding-top: 90px;
     }
     .wrapper {
       max-width: 1366px;
@@ -57,7 +57,7 @@
 
         @include mobile {
           width: 100%;
-          max-height: 300px;
+          max-height: 200px;
         }
 
         img {
@@ -115,7 +115,7 @@
             font-size: 18px;
           }
         }
-        button {
+        a {
           background-color: orange;
           border-radius: 20px;
           border: none;
@@ -124,6 +124,8 @@
           font-weight: 700;
           cursor: pointer;
           font-size: 18px;
+          z-index: 1;
+          text-align: center;
         }
       }
     }

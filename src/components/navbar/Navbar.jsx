@@ -13,12 +13,13 @@ const Navbar = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="font-bold "
         >
           Vugar Gasimov
         </motion.span>
         <div className="social">
           <motion.a
+            target="_blank"
+            rel="noreferrer"
             href="https://github.com/vugar-gasimov"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -27,6 +28,8 @@ const Navbar = () => {
             <FaGithub size={24} />
           </motion.a>
           <motion.a
+            target="_blank"
+            rel="noreferrer"
             href="https://www.facebook.com/profile.php?id=100006303706598"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -35,6 +38,8 @@ const Navbar = () => {
             <img src="/facebook.png" alt="facebook" />
           </motion.a>
           <motion.a
+            target="_blank"
+            rel="noreferrer"
             href="https://www.instagram.com/_vugargasimov_?igsh=YXdmaHN0OHh2a29n"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -43,6 +48,8 @@ const Navbar = () => {
             <img src="/instagram.png" alt="instagram" />
           </motion.a>
           <motion.a
+            target="_blank"
+            rel="noreferrer"
             href="www.linkedin.com/in/vugar5gasimov"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -51,6 +58,8 @@ const Navbar = () => {
             <img src="/linkedin.png" alt="linkedin" />
           </motion.a>
           <motion.a
+            target="_blank"
+            rel="noreferrer"
             href="https://t.me/GasimovVugar"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -59,6 +68,8 @@ const Navbar = () => {
             <img src="/telegram.png" alt="telegram" />
           </motion.a>
           <motion.a
+            target="_blank"
+            rel="noreferrer"
             href="https://twitter.com/Vugar5Gasimov"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
