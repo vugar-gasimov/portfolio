@@ -23,7 +23,7 @@
       text-align: center;
       flex-direction: column;
       gap: 10px;
-      margin-bottom: -70px;
+      margin-bottom: -10px;
     }
 
     @include tablet {
@@ -37,7 +37,7 @@
       color: gray;
       text-align: right;
       @include mobile {
-        padding: 10px 10px 0 76px;
+        padding: 32px 15px 0 78px;
       }
     }
 
@@ -47,7 +47,7 @@
       border-top: 0.5px solid gray;
 
       @include mobile {
-        width: 300px;
+        width: 200px;
         margin-left: 80px;
       }
 
@@ -134,7 +134,7 @@
     display: flex;
     max-width: 1366px;
     margin: auto;
-    gap: 10px;
+    gap: 50px;
 
     @include mobile {
       flex-direction: column;
@@ -142,26 +142,29 @@
       margin-bottom: 50px;
     }
     @include tablet {
-      gap: 5px;
+      gap: 15px;
     }
 
     .box {
-      padding: 50px;
+      padding: 30px;
       border: 0.5px solid gray;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: 30px;
       border-radius: 20px;
+      font-size: 18px;
 
       @include mobile {
         border: none;
         align-items: center;
         gap: 15px;
         padding: 10px;
+        font-size: 14px;
       }
 
       @include tablet {
-        padding: 10px;
+        padding: 20px;
+        font-size: 16px;
         justify-content: space-evenly;
       }
 
