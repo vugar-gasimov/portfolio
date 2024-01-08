@@ -31,7 +31,9 @@
     height: 100%;
     overflow: hidden;
     padding: 20px;
-
+    @include mobile {
+      padding-top: 75px;
+    }
     .wrapper {
       max-width: 1366px;
       height: 100%;
@@ -41,12 +43,12 @@
       justify-content: center;
       gap: 40px;
 
+      @include tablet {
+        gap: 20px;
+      }
       @include mobile {
         flex-direction: column;
         gap: 10px;
-      }
-      @include tablet {
-        gap: 20px;
       }
 
       .imgContainer {
@@ -74,6 +76,9 @@
         flex-direction: column;
         gap: 30px;
 
+        @include tablet {
+          gap: 20px;
+        }
         @include mobile {
           transform: none !important;
           padding: 10px;
@@ -81,19 +86,16 @@
           text-align: center;
           gap: 15px;
         }
-        @include tablet {
-          gap: 20px;
-        }
 
         h2 {
           font-size: 72px;
           color: lightgray;
 
-          @include mobile {
-            font-size: 36px;
-          }
           @include tablet {
             font-size: 52px;
+          }
+          @include mobile {
+            font-size: 36px;
           }
         }
         p {
@@ -106,11 +108,11 @@
         h3 {
           font-size: 36px;
           color: lightgray;
-          @include mobile {
-            font-size: 18px;
-          }
           @include tablet {
             font-size: 24px;
+          }
+          @include mobile {
+            font-size: 18px;
           }
         }
         button {

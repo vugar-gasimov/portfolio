@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import ToggleBtn from "./toggleBtn/ToggleBtn";
 import Links from "./links/Links";
@@ -26,13 +26,36 @@ const variants = {
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
+  const sidebarRef = useRef();
+  const wrapperRef = useRef();
+
+  const closeSidebar = (e) => {
+    if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", closeSidebar);
+
+    return () => {
+      document.removeEventListener("mousedown", closeSidebar);
+    };
+  }, []);
+
   return (
-    <motion.div animate={open ? "open" : "closed"} className="sidebar">
-      <motion.div variants={variants} className="bg">
-        <Links />
+    <div ref={wrapperRef}>
+      <motion.div
+        animate={open ? "open" : "closed"}
+        className="sidebar"
+        ref={sidebarRef}
+      >
+        <motion.div variants={variants} className="bg">
+          <Links />
+        </motion.div>
+        <ToggleBtn setOpen={setOpen} />
       </motion.div>
-      <ToggleBtn setOpen={setOpen} />
-    </motion.div>
+    </div>
   );
 };
 export default Sidebar;

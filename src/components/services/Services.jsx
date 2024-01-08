@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import "./services.scss";
 
 const variantLeft = {
@@ -55,6 +55,11 @@ const Services = () => {
     const handleResize = () => {
       if (window.innerWidth > 738) {
         setShowToggleDiv(false);
+        setShowFullContent({
+          hardSkills: false,
+          languages: false,
+          softSkills: false,
+        });
       } else {
         setShowToggleDiv(true);
       }
@@ -85,7 +90,13 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variantLeft}>
         <div className="title">
-          <img src="/people.webp" alt="Team working together." />
+          {showFullContent.hardSkills ||
+          showFullContent.languages ||
+          showFullContent.softSkills ? (
+            ""
+          ) : (
+            <img src="/people.webp" alt="Team working together." />
+          )}
           <h1>
             <motion.b whileHover={{ color: "lightgray" }}>Why </motion.b>
             me ?
@@ -109,7 +120,8 @@ const Services = () => {
             className="mobile-box"
           >
             <h2>
-              My hard skills <FaChevronDown />
+              My hard skills{" "}
+              {showFullContent.hardSkills ? <FaChevronUp /> : <FaChevronDown />}
             </h2>
             {showFullContent.hardSkills && (
               <p>
@@ -150,7 +162,8 @@ const Services = () => {
             whileHover={{ background: "lightgray", color: "black" }}
           >
             <h2>
-              Languages <FaChevronDown />
+              Languages{" "}
+              {showFullContent.languages ? <FaChevronUp /> : <FaChevronDown />}
             </h2>
             {showFullContent.languages && (
               <p>
@@ -191,7 +204,8 @@ const Services = () => {
             whileHover={{ background: "lightgray", color: "black" }}
           >
             <h2>
-              Soft skills <FaChevronDown />
+              Soft skills{" "}
+              {showFullContent.softSkills ? <FaChevronUp /> : <FaChevronDown />}
             </h2>
             {showFullContent.softSkills && (
               <p>

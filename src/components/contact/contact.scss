@@ -10,14 +10,14 @@
   flex-wrap: wrap;
   align-content: center;
 
-  @include mobile {
-    width: 100%;
-    padding: 10px;
-    gap: 0;
-  }
   @include tablet {
     padding: 20px;
     gap: 15px;
+  }
+  @include mobile {
+    width: 100%;
+    padding: 10px;
+    gap: 7px;
   }
 
   .textContainer {
@@ -38,11 +38,11 @@
       line-height: 88px;
       color: orange;
 
-      @include mobile {
-        font-size: 36px;
-      }
       @include tablet {
         font-size: 72px;
+      }
+      @include mobile {
+        font-size: 36px;
       }
     }
 
@@ -65,6 +65,10 @@
       position: absolute;
       margin: auto;
       z-index: -1;
+      @include mobile {
+        width: 260px !important;
+        height: 260px !important;
+      }
     }
 
     form {

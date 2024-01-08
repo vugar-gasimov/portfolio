@@ -18,17 +18,16 @@
     align-items: center;
     gap: 20px;
 
+    @include tablet {
+      margin-top: -45px;
+      gap: 15px;
+    }
     @include mobile {
       align-self: center;
       text-align: center;
       flex-direction: column;
       gap: 10px;
       margin-bottom: -10px;
-    }
-
-    @include tablet {
-      margin-top: -45px;
-      gap: 15px;
     }
 
     p {
@@ -46,13 +45,12 @@
       border: none;
       border-top: 0.5px solid gray;
 
-      @include mobile {
-        width: 200px;
-        margin-left: 80px;
-      }
-
       @include tablet {
         width: 400px;
+      }
+      @include mobile {
+        width: 260px;
+        margin-left: 50px;
       }
     }
   }
@@ -71,13 +69,13 @@
       align-items: center;
       gap: 50px;
 
+      @include tablet {
+        gap: 20px;
+      }
       @include mobile {
         flex-direction: column;
         text-align: center;
         gap: 10px;
-      }
-      @include tablet {
-        gap: 20px;
       }
 
       img {
@@ -89,17 +87,21 @@
           width: 300px;
           height: 100px;
         }
+        @include mobile {
+          width: 300px;
+          height: 200px;
+        }
       }
 
       h1 {
         font-size: 96px;
         font-weight: 100;
 
-        @include mobile {
-          font-size: 36px;
-        }
         @include tablet {
           font-size: 62px;
+        }
+        @include mobile {
+          font-size: 36px;
         }
         b {
           color: orange;
@@ -116,15 +118,15 @@
         cursor: pointer;
         font-weight: bold;
 
-        @include mobile {
-          font-size: 16px;
-          width: 150px;
-          height: 50px;
-        }
         @include tablet {
           font-size: 20px;
           width: 200px;
           height: 75px;
+        }
+        @include mobile {
+          font-size: 16px;
+          width: 150px;
+          height: 50px;
         }
       }
     }
@@ -136,13 +138,27 @@
     margin: auto;
     gap: 50px;
 
+    @include tablet {
+      gap: 15px;
+    }
     @include mobile {
       flex-direction: column;
       width: 100%;
       margin-bottom: 50px;
-    }
-    @include tablet {
       gap: 15px;
+    }
+    .mobile-box {
+      border: 0.5px solid gray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      border-radius: 20px;
+      font-size: 18px;
+      padding: 10px;
+      h2 {
+        color: orange;
+      }
     }
 
     .box {
@@ -154,18 +170,17 @@
       border-radius: 20px;
       font-size: 18px;
 
+      @include tablet {
+        padding: 20px;
+        font-size: 16px;
+        justify-content: space-evenly;
+      }
       @include mobile {
         border: none;
         align-items: center;
         gap: 15px;
         padding: 10px;
         font-size: 14px;
-      }
-
-      @include tablet {
-        padding: 20px;
-        font-size: 16px;
-        justify-content: space-evenly;
       }
 
       h2 {
