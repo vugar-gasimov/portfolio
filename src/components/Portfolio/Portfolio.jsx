@@ -32,7 +32,8 @@ const items = [
     title: "Expense Tracker",
     img: "/e-tracker.png",
     desc: "A website with a responsive layout. Build project on github, checked for build errors and live page performance. The main goal of the project: Implement an Expense Tracker that allows the user to monitor their daily expenses.Complete tasks according to the deadline (November 23, 2023-November 29, 2023)",
-    skills: "MongoDB, Next.js, NextAuth",
+
+    skills: "React, Redux, Axios",
     link: "https://tane4ka170.github.io/project_blackout/",
   },
   {
@@ -40,7 +41,7 @@ const items = [
     title: "MindSpark",
     img: "/mind-spark.png",
     desc: "🚀 MindSpark Creative Thoughts Agency. Unlock creativity with MindSpark! This is my passion project, a digital playground for web development, creative insights, and administration.What You'll Find:🌐 Web Services | 📝 Blogs | 🔐 Admin Panel. Explore our mission, read our insights, and experience the admin privileges! Join us on a journey of digital innovation.",
-    skills: "React, Redux, Axios",
+    skills: "MongoDB, Next.js, NextAuth",
     link: "https://mind-spark-eta.vercel.app/",
   },
   //   {
