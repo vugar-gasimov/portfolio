@@ -14,7 +14,7 @@
 
     @include mobile {
       padding-top: calc(100vh - 100px);
-      font-size: 24px;
+      font-size: 16px;
     }
 
     .progressBar {
@@ -77,7 +77,7 @@
         gap: 30px;
 
         @include tablet {
-          gap: 20px;
+          gap: 7px;
         }
         @include mobile {
           transform: none !important;
