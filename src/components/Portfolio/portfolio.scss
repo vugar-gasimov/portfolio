@@ -14,7 +14,7 @@
 
     @include mobile {
       padding-top: calc(100vh - 100px);
-      font-size: 16px;
+      font-size: 14px;
     }
 
     .progressBar {
@@ -48,7 +48,7 @@
       }
       @include mobile {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
       }
 
       .imgContainer {
@@ -57,7 +57,7 @@
 
         @include mobile {
           width: 100%;
-          max-height: 200px;
+          max-height: 165px;
         }
 
         img {
@@ -84,7 +84,7 @@
           padding: 10px;
           align-items: center;
           text-align: center;
-          gap: 15px;
+          gap: 7px;
         }
 
         h2 {
@@ -95,14 +95,14 @@
             font-size: 52px;
           }
           @include mobile {
-            font-size: 36px;
+            font-size: 20px;
           }
         }
         p {
           color: orange;
           font-size: 20px;
           @include mobile {
-            font-size: 16px;
+            font-size: 12px;
           }
         }
         h3 {
@@ -112,7 +112,7 @@
             font-size: 24px;
           }
           @include mobile {
-            font-size: 18px;
+            font-size: 14px;
           }
         }
         a {
@@ -126,6 +126,10 @@
           font-size: 18px;
           z-index: 1;
           text-align: center;
+          @include mobile {
+            padding: 12px 4px 12px 4px;
+            font-size: 14px;
+          }
         }
       }
     }

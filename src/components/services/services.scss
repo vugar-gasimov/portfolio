@@ -91,7 +91,7 @@
         }
         @include mobile {
           width: 300px;
-          height: 200px;
+          height: 100px;
         }
       }
 
@@ -103,7 +103,7 @@
           font-size: 62px;
         }
         @include mobile {
-          font-size: 36px;
+          font-size: 28px;
         }
         b {
           color: orange;
@@ -160,6 +160,7 @@
       padding: 10px;
       h2 {
         color: orange;
+        font-size: 20px;
       }
     }
 
