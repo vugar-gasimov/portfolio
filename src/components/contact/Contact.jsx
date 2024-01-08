@@ -60,7 +60,7 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Street Henerala Tupykova, 31,Kyiv, Kyiv City, Ukraine</span>
+          <span>Henerala Tupykova Street, 31, Kyiv, Kyiv City, Ukraine</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
