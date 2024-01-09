@@ -82,7 +82,7 @@
 
       img {
         width: 400px;
-        height: 200px;
+        height: 100px;
         border-radius: 50px;
         object-fit: cover;
         @include tablet {
@@ -96,7 +96,7 @@
       }
 
       h1 {
-        font-size: 96px;
+        font-size: 82px;
         font-weight: 100;
 
         @include tablet {
@@ -165,7 +165,7 @@
     }
 
     .box {
-      padding: 20px;
+      padding: 10px 20px 10px 20px;
       border: 0.5px solid gray;
       display: flex;
       flex-direction: column;

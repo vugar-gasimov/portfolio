@@ -32,6 +32,11 @@ section {
     @content;
   }
 }
+@mixin small-t {
+  @media (max-width: 840px) {
+    @content;
+  }
+}
 @mixin tablet {
   @media (max-width: 1024px) {
     @content;
